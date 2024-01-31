@@ -2,112 +2,477 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+<div class="max-w-6xl mx-auto px-4 font-montserrat">
+
+<header>
+  <div
+    class="flex items-center justify-between py-3 px-4 my-4 rounded-md bg-[#111111]"
+  >
+    <a href="">
+      <h1 class="text-2xl font-semibold text-green-400">indise.</h1>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-8 justify-between text-slate-100 font-light">
+      <li>
+        <a href=""> Product </a>
+      </li>
+      <li>
+        <a href=""> Project </a>
+      </li>
+      <li>
+        <a href=""> Community </a>
+      </li>
+      <li>
+        <a href=""> About Us </a>
+      </li>
+
+      <li>
+        <a class="flex items-center justify-center text-lg" href="">
+          <i class="bx bx-search"></i>
+        </a>
+      </li>
+    </ul>
+
+    <a
+      href=""
+      class="bg-[#bbb2ce] rounded-full py-2 px-4 text-whit font-medium transition duration-300 ease-in-out hover:bg-[#a9a0c1]"
+    >
+      Get Started
+    </a>
+  </div>
+</header>
+
+<div class="grid md:grid-cols-3 row-span-2 gap-4 mb-4">
+  <div class="relative md:col-span-1 md:row-span-1 rounded-xl group overflow-hidden hover:cursor-pointer">
+    <img
+      class=" w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+      src="https://images.unsplash.com/photo-1705323111650-4297b5cad135?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+
+    <div class="absolute bottom-0 text-white p-5 z-40">
+      <h1 class="text-xs py-0.5 px-2 bg-gray-300/20 rounded-full mb-2 uppercase border w-fit ">Travel</h1>
+      <h1 class="text-2xl font-medium">
+        Everything you need to know about VAT for your business
+      </h1>
+    </div>
+
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent "
+    ></div>
+  </div>
+
+  <div class="hidden md:block relative w-full md:col-span-2 md:row-span-2 ">
+    <img
+      class="rounded-xl w-full h-full object-cover "
+      src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+
+    <div class="absolute bottom-0 text-white p-8 z-40">
+      <h1 class="mb-2 uppercase">Business Creators</h1>
+      <h1 class="text-4xl font-medium">
+     Everything you need to know about VAT for your business
+      </h1>
+
+      <div class="flex items-center gap-4 mt-6">
+        <a
+          href=""
+          class="border rounded-full py-2 px-4 text-white text-sm transition duration-300 ease-in-out hover:bg-gray-300/10"
+        >
+          Read Article <i class="bx bx-right-arrow-alt"></i>
+        </a>
+
+        <a
+          href=""
+          class="bg-[#363835] rounded-full py-2 px-4 text-whit text-sm border border-[#363835] transition duration-300 ease-in-out hover:bg-[#a9a0c1]"
+        >
+          <div class="flex items-center gap-1">
+            <img
+              class="rounded-full w-5 h-5 object-cover  inline-block mr-2"
+              src="
+
+      https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+      "
+              alt=""
             />
+            <span>by Anastra</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent rounded-xl"
+    ></div>
+  </div>
+
+
+
+  <div class="relative md:col-span-1 md:row-span-1 rounded-xl group overflow-hidden hover:cursor-pointer">
+    <img
+      class=" w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+      src="https://images.unsplash.com/photo-1705107959309-ca7d26fbeb08?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+
+    <div class="absolute bottom-0 text-white p-5 z-40">
+      <h1 class="text-xs py-0.5 px-2 bg-gray-300/20 rounded-full mb-2 uppercase border w-fit ">Travel</h1>
+      <h1 class="text-2xl font-medium">
+        Everything you need to know about VAT for your business
+      </h1>
+    </div>
+
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent "
+    ></div>
+  </div>
+</div>
+
+
+<section class="bg-purple-400/30 mb-4 rounded-xl py-10 px-8">
+<div class="flex items-end justify-between mb-14">
+  <div class="flex-1">
+    <h1 class="text-gray-900 text-5xl font-bold mb-4">
+      Our most popular articles
+    </h1>
+    <p class=" text-gray-800 ">
+      The latest news tips and advice from our dedicated reporters,
+      straight to your inbox.
+    </p>
+  </div>
+
+  <div class="flex items-end flex-1 justify-end">
+    <a
+      href=""
+      class="bg-gray-900 rounded-full py-3 px-6 text-sm text-white transition duration-300 ease-in-out"
+    >
+      Read All Articles
+    </a>
+  </div>
+</div>
+
+<div class="flex items-center gap-8 multiple-items">
+  <div class="relative rounded-xl group overflow-hidden hover:cursor-pointer">
+    <img
+      class=" max-w-[400px] min-h-[350px] object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+      src="https://images.unsplash.com/photo-1705323111650-4297b5cad135?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+
+    <div class="absolute bottom-0 text-white p-5 z-40">
+      <h1 class="text-xs py-0.5 px-2 bg-gray-300/20 rounded-full mb-2 uppercase border w-fit ">Travel</h1>
+      <h1 class="text-2xl font-medium">
+        Everything you need to know about VAT for your business
+      </h1>
+    </div>
+
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent "
+    ></div>
+  </div>
+
+  <div class="relative rounded-xl group overflow-hidden hover:cursor-pointer">
+    <img
+      class=" max-w-[400px] min-h-[350px] object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+      src="https://images.unsplash.com/photo-1705323111650-4297b5cad135?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+
+    <div class="absolute bottom-0 text-white p-5 z-40">
+      <h1 class="text-xs py-0.5 px-2 bg-gray-300/20 rounded-full mb-2 uppercase border w-fit ">Travel</h1>
+      <h1 class="text-2xl font-medium">
+        Everything you need to know about VAT for your business
+      </h1>
+    </div>
+
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent "
+    ></div>
+  </div>
+
+  <div class="relative rounded-xl group overflow-hidden hover:cursor-pointer">
+    <img
+      class=" max-w-[400px] min-h-[350px] object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+      src="https://images.unsplash.com/photo-1705323111650-4297b5cad135?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+
+    <div class="absolute bottom-0 text-white p-5 z-40">
+      <h1 class="text-xs py-0.5 px-2 bg-gray-300/20 rounded-full mb-2 uppercase border w-fit ">Travel</h1>
+      <h1 class="text-2xl font-medium">
+        Everything you need to know about VAT for your business
+      </h1>
+    </div>
+
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent "
+    ></div>
+  </div>
+</div>
+</section>
+
+<section
+class="my-10 text-white flex flex-col gap-4 items-center justify-center py-8 rounded-xl"
+>
+<h1 class="text-3xl font-medium w-2/4 text-center text-gray-900">
+  Useful tips and tricks for your
+  <span class="text-green-400">next trip</span>
+  abroad.
+</h1>
+<a
+  href=""
+  class="bg-gray-900 rounded-full py-3 px-6 text-sm text-white transition duration-300 ease-in-out"
+>
+  Read All Articles
+</a>
+</section>
+
+<section>
+<div class="grid grid-cols-7 gap-8">
+  <div class="flex flex-col col-span-4">
+    <img
+      class="rounded-xl w-full h-[350px] object-cover "
+      src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt=""
+    />
+
+    <div class="mt-8 mb-4">
+      <a
+        href=""
+        class="border border-gray-900 rounded-full py-1 px-4 text-gray-900 text-sm font-medium transition duration-300 ease-in-out"
+      >
+        Sport
+      </a>
+
+      <a href="" class="py-1 px-4 text-gray-900 text-sm font-medium">
+        4 Hours read
+      </a>
+    </div>
+
+    <div class="mb-4">
+      <h1 class="text-gray-900 text-3xl font-semibold mb-3">
+        2022 NFL Mock Draft: Predictions for Top.
+      </h1>
+      <p class=" text-gray-800 ">
+        The latest news tips and advice from our dedicated reporters,
+        straight to your inbox.
+      </p>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a
+        href=""
+        class="border border-gray-900 rounded-full py-2 px-4 text-whit text-sm font-medium transition duration-300 ease-in-out"
+      >
+        Read Article <i class="bx bx-right-arrow-alt"></i>
+      </a>
+
+      <a href="" class="py-2 px-4 text-whit text-sm font-medium">
+        <div class="flex items-center gap-1">
+          <img
+            class="rounded-full w-5 h-5 object-cover  inline-block mr-2"
+            src="
+
+          https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+          "
+            alt=""
+          />
+          <span>by Anastra</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-4 col-span-3">
+    <div class="flex items-center gap-8 justify-between border-b pb-2 border-gray-300">
+      <div>
+        <div>
+          <a
+            href=""
+            class="border border-gray-900 rounded-full py-1 px-4 text-gray-900 text-sm font-medium transition duration-300 ease-in-out"
+          >
+            Sport
+          </a>
+
+          <a
+            href=""
+            class="py-1 px-4 text-gray-900 text-sm font-medium"
+          >
+            4 Hours read
           </a>
         </div>
+
+        <h1 class="text-gray-900 text-md font-semibold mt-4">
+          2022 NFL Mock Draft: Predictions for Top.
+        </h1>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div>
+        <img
+          class="rounded-xl w-full h-[100px] object-cover object-center"
+          src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
         />
       </div>
+    </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+    <div class="flex items-center gap-8 justify-between border-b pb-2 border-gray-300">
+      <div>
+        <div>
+          <a
+            href=""
+            class="border border-gray-900 rounded-full py-1 px-4 text-gray-900 text-sm font-medium transition duration-300 ease-in-out"
+          >
+            Sport
+          </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <a
+            href=""
+            class="py-1 px-4 text-gray-900 text-sm font-medium"
+          >
+            4 Hours read
+          </a>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <h1 class="text-gray-900 text-md font-semibold mt-4">
+          2022 NFL Mock Draft: Predictions for Top.
+        </h1>
       </div>
-    </main>
+
+      <div>
+        <img
+          class="rounded-xl w-full h-[100px] object-cover object-center"
+          src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="flex items-center gap-8 justify-between border-b pb-2 border-gray-300">
+      <div>
+        <div>
+          <a
+            href=""
+            class="border border-gray-900 rounded-full py-1 px-4 text-gray-900 text-sm font-medium transition duration-300 ease-in-out"
+          >
+            Sport
+          </a>
+
+          <a
+            href=""
+            class="py-1 px-4 text-gray-900 text-sm font-medium"
+          >
+            4 Hours read
+          </a>
+        </div>
+
+        <h1 class="text-gray-900 text-md font-semibold mt-4">
+          2022 NFL Mock Draft: Predictions for Top.
+        </h1>
+      </div>
+
+      <div>
+        <img
+          class="rounded-xl w-full h-[100px] object-cover object-center"
+          src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="flex items-center gap-8 justify-between border-b pb-2 border-gray-300">
+      <div>
+        <div>
+          <a
+            href=""
+            class="border border-gray-900 rounded-full py-1 px-4 text-gray-900 text-sm font-medium transition duration-300 ease-in-out"
+          >
+            Sport
+          </a>
+
+          <a
+            href=""
+            class="py-1 px-4 text-gray-900 text-sm font-medium"
+          >
+            4 Hours read
+          </a>
+        </div>
+
+        <h1 class="text-gray-900 text-md font-semibold mt-4">
+          2022 NFL Mock Draft: Predictions for Top.
+        </h1>
+      </div>
+
+      <div>
+        <img
+          class="rounded-xl w-full h-[100px] object-cover object-center"
+          src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="flex items-center gap-8 justify-between border-b pb-2 border-gray-300">
+      <div>
+        <div>
+          <a
+            href=""
+            class="border border-gray-900 rounded-full py-1 px-4 text-gray-900 text-sm font-medium transition duration-300 ease-in-out"
+          >
+            Sport
+          </a>
+
+          <a
+            href=""
+            class="py-1 px-4 text-gray-900 text-sm font-medium"
+          >
+            4 Hours read
+          </a>
+        </div>
+
+        <h1 class="text-gray-900 text-md font-semibold mt-4">
+          2022 NFL Mock Draft: Predictions for Top.
+        </h1>
+      </div>
+
+      <div>
+        <img
+          class="rounded-xl w-full h-[100px] object-cover object-center"
+          src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section
+class="bg-gray-900 my-10 text-white flex flex-col items-center justify-center py-12 rounded-xl"
+>
+<h1 class="w-2/4 text-4xl font-semibold text-center">
+  Subscribe to our <span class="text-green-400">newsletter</span> and
+  get the latest news.
+</h1>
+
+<div
+  class="flex items-center justify-between gap-4 mt-8 border p-2 w-2/6 rounded-full"
+>
+  <input
+    type="text"
+    placeholder="Enter your email"
+    class="bg-transparent flex-1 rounded-full py-2 px-4 outline-none text-sm font-medium transition duration-300 ease-in-out"
+  />
+
+  <a
+    href=""
+    class="rounded-full py-2 px-4 text-sm text-gray-900 font-semibold transition duration-300 ease-in-out bg-[#a9a0c1]"
+  >
+    Subscribe
+  </a>
+</div>
+</section>
+</div>
   );
 }
